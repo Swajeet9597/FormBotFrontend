@@ -17,7 +17,7 @@ const Createform = ({ isDarkMode, selectedFolderName, getformsstate, paramData }
   const [anotherForms, setAnotherForms] = useState(null)
 
   const [openCreate, setOpenCreate] = useState(false)
-  const [openDelete, setOpenDelete] = useState(false)
+  const [openDeleteu, setOpenDelete] = useState(false)
   const [deleteFolder, setDeleteFolder] = useState("")
   const navigate = useNavigate()
 
@@ -156,7 +156,7 @@ const Createform = ({ isDarkMode, selectedFolderName, getformsstate, paramData }
 
               </div> : null}
 
-            {openDelete ?
+            {openDeleteu ?
               <div className='open'>
 
 

@@ -18,7 +18,7 @@ const Createfolder = ({
   const light = ["createlight", "folderlight"];
 
   const [openCreate, setOpenCreate] = useState(false);
-  const [openDelete, setOpenDelete] = useState(false);
+  const [openDeleteu, setOpenDelete] = useState(false);
   const [deleteFolder, setDeleteFolder] = useState("");
 
   const [folders, setFolders] = useState([]);
@@ -235,7 +235,7 @@ const Createfolder = ({
               </div>
             ) : null}
 
-            {openDelete ? (
+            {openDeleteu ? (
               <div className="open">
                 <OpenDelete
                   value="folder"
