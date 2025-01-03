@@ -331,7 +331,7 @@ const Createfolder = ({
             </div>
           ) : null}
 
-          {openDelete ? (
+          {openDeleteu ? (
             <div className="open">
               <OpenDelete
                 value="folder"

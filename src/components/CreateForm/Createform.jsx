@@ -194,7 +194,7 @@ const Createform = ({ isDarkMode, selectedFolderName, getformsstate, paramData }
 
             </div> : null}
 
-          {openDelete ?
+          {openDeleteu ?
             <div className='open'>
 
 
