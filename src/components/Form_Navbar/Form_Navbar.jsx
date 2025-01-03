@@ -165,7 +165,7 @@ const Form_Navbar = ({ formData }) => {
     return (
       <div style={{ backgroundColor: lightMode ? "white" : null }} className={lightMode ? light[0] : "Form_Navbar"} >
         <div className={lightMode ? light[1] : "formname"}>
-          <input onChange={handleUpdateName} type="text" className='inputChange' style={{ backgroundColor: "#37373E", border: "none", color: "#767676D1" }} placeholder={`${params.formName}`} />
+          <input onChange={handleUpdateName} type="text" className='inputChange' style={{ backgroundColor: lightMode ? "white" : "#37373E", border: "none", color: "#767676D1" }} placeholder={`${params.formName}`} />
           {/* {params.formName} */}
         </div>
         <div className="flowResponse">
