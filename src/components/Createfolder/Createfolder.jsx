@@ -142,7 +142,10 @@ const Createfolder = ({
 
   useEffect(()=>{
     getFoldersAnotherworkspace()
-    getUserMode()
+    if(paramss.anotherworkspace){
+
+      getUserMode()
+    }
   },[openCreate,paramss])
 
 

@@ -118,7 +118,10 @@ const Createform = ({ isDarkMode, selectedFolderName, getformsstate, paramData }
 
   useEffect(()=>{
     getAnotherForms()
-    getUserMode()
+    if(params.anotherworkspace){
+
+      getUserMode()
+    }
   },[params,openCreate])
 
 
