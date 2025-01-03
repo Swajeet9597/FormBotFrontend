@@ -172,7 +172,9 @@ const Form = () => {
   useEffect(()=>{
     console.log("getting....");
     getFormData()
-    getUserMode()
+    if(params.anotherworkspace){
+        getUserMode()
+    }
   },[])
 
 
