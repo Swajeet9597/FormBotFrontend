@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Inter", serif;
+}
+.LandingPage_Navbar{
+    width: 70%;
+    margin: auto;
+    /* margin-top: 5vh; */
+    margin-bottom: 5vh;
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.LandingPage_Navbar_left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.LandingPage_Navbar_right{
+    display: flex;
+         
+    gap: 10px;
+}
+
+.LandingPage_Navbar_left span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    font-family: "Inter", serif;
+    font-weight: 700;
+    cursor: pointer;
+    color: white;
+}
+
+
+.signin{
+    border: 1px solid #7EA6FF;
+    border-radius: 6px;
+    background-color: #171923;
+    padding: 10px 17px;
+    color: #7EA6FF;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.Lcreateformbot{
+    border: none;
+    border-radius: 6px;
+    padding: 10px 17px;
+    background-color: #1A5FFF;
+    box-shadow: 1px #FFFFFF33 inset;
+    color: #FFFFFF;
+    font-weight: 700;
+    cursor: pointer;
+}

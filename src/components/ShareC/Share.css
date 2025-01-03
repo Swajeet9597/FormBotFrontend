@@ -1,0 +1,14 @@
+.selectOpShare{
+    font-size: 1rem;
+    padding: 0.2rem;
+    border: none;
+}
+.shareDiv{
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 2rem; */
+}
+
+.selectOpShare option {
+    font-size: 1rem;
+}

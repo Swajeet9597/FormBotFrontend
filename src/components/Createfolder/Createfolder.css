@@ -1,0 +1,99 @@
+.Createfolder{
+    display: flex;
+    width: 80vw;
+    /* height: 20vh; */
+    /* overflow-y: scroll; */
+    margin: auto;
+    flex-wrap: wrap;
+    color: white;
+    margin-top: 8vh;
+    gap: 2rem;
+    position: relative;
+}
+
+.create{
+    background-color: #2A2A2D;
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.create span{
+    font-weight: 400;
+}
+
+.backarrowfolder{
+    display: flex;
+    align-items: center;
+}
+
+.folder{
+    background-color: #2A2A2D;
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    gap: 9px;
+    cursor: pointer;
+    /* margin-left: 10rem; */
+}
+
+.folder span{
+    font-weight: 400;
+}
+.open{
+    width: 100%;
+    height: 50vh;
+    position: absolute;
+    top: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.createlight{
+    background-color: #ffff;
+    color: black;
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    gap: 5px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.603);
+}
+.createlight span{
+    font-weight: 400;
+}
+.folderlight{
+    background-color: #ffff;
+    color: black;
+    display: flex;
+    padding: 8px 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    gap: 9px;
+    cursor: pointer;
+    border: 1px solid rgba(0, 0, 0, 0.603);
+}
+
+.folderlight span{
+    font-weight: 400;
+}
+
+

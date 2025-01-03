@@ -1,0 +1,87 @@
+.createform{
+    display: flex;
+    width: 80vw;
+    height: 60vh;
+    /* height: 20vh; */
+    /* overflow-y: scroll; */
+    margin: auto;
+    flex-wrap: wrap;
+    color: white;
+    margin-top: 5vh;
+    gap: 2rem;
+    /* overflow: scroll; */
+    overflow-y: scroll;
+    justify-content:flex-start;
+    align-items: flex-start;
+    padding: 2rem 0;
+    position: relative;
+}
+.createform1 {
+    display: flex;
+    height: 16rem;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3rem;
+    padding: 0rem 2.5rem;
+    align-items: center;
+    background-color: #1A5FFF;
+    border-radius: 6px;
+}
+.createform1 img{
+    width: 2.5rem;
+    cursor: pointer;
+}
+
+.createform1 span{
+    font-weight: 300;
+}
+
+.form1 {
+    display: flex;
+    height: 16rem;
+    width: 13rem;
+    flex-direction: column;
+    justify-content: center;
+    /* gap: 3rem; */
+    /* padding: 0rem 2.5rem; */
+    align-items: center;
+    background-color: #FFFFFF80;
+    border-radius: 6px;
+    position: relative;
+}
+.form1 img{
+    /* width: 2.5rem; */
+    /* width: 1rem; */
+    cursor: pointer;
+    position: absolute;
+    right: -2.5%;
+    top: -3.5%;
+}
+
+.form1 span{
+    
+    font-weight: 300;
+}
+
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #888; /* Color of the scrollbar thumb */
+    border-radius: 5px; /* Rounded corners for the thumb */
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Darker color when hovering */
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #2c2b2b; /* Color of the scrollbar track */
+  }
+
+
+  
