@@ -36,7 +36,8 @@ const Submitform = () => {
       if(currentStepIndex == 0){
 
         console.log("starts");
-         const response = fetch(`${BASE_URL}/api/user/addStarts`,{
+
+         const addstart = fetch(`${BASE_URL}/api/user/addStarts`,{
           method:"POST",
           credentials:"include",
           headers:{
@@ -114,6 +115,15 @@ const Submitform = () => {
           },
           body: JSON.stringify({arr:arr, folderName: params.params, formName:params.formName, userId:params.userId })
         })
+
+        const reduceStart = fetch(`${BASE_URL}/api/user/reduceStarts`,{
+          method:"POST",
+          credentials:"include",
+          headers:{
+            "Content-Type":"application/json"
+          },
+          body:JSON.stringify({folderName: params.params, formName:params.formName, userId:params.userId})
+         })
        
           
         } catch (error) {
