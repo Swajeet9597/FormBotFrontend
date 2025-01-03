@@ -46,7 +46,7 @@ const Form_Navbar = ({formData}) => {
           navigate(`/form/${params.params}/${updatedName}`)
         }
 
-        const response = await fetch(`${BASE_URL}/api/user/updatedFormname`,{
+        const updateResponse = await fetch(`${BASE_URL}/api/user/updatedFormname`,{
           method:"POST",
           credentials:"include",
           headers:{
@@ -61,7 +61,7 @@ const Form_Navbar = ({formData}) => {
        return toast.error("Please create a form then save...")
       }
 
-      const response = await fetch(`${BASE_URL}/api/user/addFormData`,{
+      const saveResponse  = await fetch(`${BASE_URL}/api/user/addFormData`,{
         method:"POST",
         credentials:"include",
         headers:{
@@ -70,10 +70,10 @@ const Form_Navbar = ({formData}) => {
         body:JSON.stringify({formData:formData, folderName:params.params,anotherUserId: params.anotherworkspace ? params.anotherworkspace : null, formName: params.formName })
       })
 
-      const data = await response.json()
+      const data = await saveResponse .json()
       if(data.success){
         toast.success(data.msg)
-          const response = fetch(`${BASE_URL}/api/user/createResponseDoc`,{
+          const responseDocResponse = await fetch(`${BASE_URL}/api/user/createResponseDoc`,{
             method:"POST",
             credentials:"include",
             headers:{
