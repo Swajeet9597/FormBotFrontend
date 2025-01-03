@@ -16,8 +16,6 @@ const Submitform = () => {
   const [currentInput, setCurrentInput] = useState("")
   const [toggle,setToggle] = useState(true)
 
-  const [formattedDateTime, setFormattedDateTime] = useState("")
-
   const {lightMode} = useContext(DataContext)
 
   let arr = []
@@ -92,7 +90,7 @@ const Submitform = () => {
             minute: "2-digit",
             hour12: true,
           })
-          // setFormattedDateTime(`${formattedDate}, ${formattedTime}`);
+  
           dateandtime = `${formattedDate}, ${formattedTime}`
         }
 
@@ -216,10 +214,6 @@ const Submitform = () => {
   useEffect(() => {
     convertToSteps(formData);
   }, [formData])
-
-  useEffect(()=>{
-
-  },[setFormattedDateTime])
 
 
   return (
