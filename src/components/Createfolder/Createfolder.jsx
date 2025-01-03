@@ -6,7 +6,7 @@ import { toast } from "react-toastify";
 import { Link, useNavigate, useParams } from "react-router-dom";
 import create from "../../assets/create.png";
 import deleteimg from "../../assets/delete.png";
-import OpenDelete from "../openDelete/OpenDelete";
+import OpenDelete from "../OpenDeleteC/OpenDelete";
 
 const Createfolder = ({
   isDarkMode,
