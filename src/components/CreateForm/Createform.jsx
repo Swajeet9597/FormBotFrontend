@@ -25,10 +25,6 @@ const Createform = ({ isDarkMode, selectedFolderName, getformsstate, paramData }
 
   const getForms = async () => {
 
-    if(params.anotherworkspace){
-      return console.log("dsfsdg");
-    }
-
     let response = await fetch(`${BASE_URL}/api/user/getForms`, {
       method: "POST",
       credentials: "include",

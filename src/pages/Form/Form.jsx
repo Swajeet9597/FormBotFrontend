@@ -78,17 +78,6 @@ const Form = () => {
 
         const value = e.target.value
 
-        console.log("button id",parseInt(e.target.id));
-        console.log("llll",formData.length);
-        console.log("ppppp",formData);
-     
-        // let updatedata = formData.filter(item => item.id === parseInt(e.target.id)) 
-        // if(updatedata){
-
-        //     console.log("updatedted>>>>",updatedata);
-        //     updatedata[0].value = e.target.value
-        // }
-
         const updatedData = formData.map((tag, idx) =>
         idx === parseInt(e.target.id) ? { ...tag, value } : tag
       );
@@ -103,12 +92,9 @@ const Form = () => {
     }
     
     function addBubble(e,buble){
-        // console.log("length", formData.length);
-        // setCount(formData.length)
-        
+
         let addInfo = {}
 
-        console.log();
         if(buble.type === "buble"){
 
             addInfo = {type: buble.type, name:buble.name, value: "", id:formData.length}
@@ -117,21 +103,6 @@ const Form = () => {
 
             addInfo = {type: buble.type, name:buble.name, value: "", id:formData.length}
         }
-        // setCount((prev)=> prev+1)
-
-        if(buble.name === "GIF"){
-            return console.log("");
-        }
-
-        // if(buble.type === "buble"){
-        //    addInfo ={type: buble.type, name:buble.name, value: "", id:""}
-        // }
-        
-        if(buble.name === "video"){
-            return console.log("");
-        }
-
-        console.log("before set", buble);
      
         setFormData((prev)=>
         [...prev, addInfo ]
@@ -147,13 +118,7 @@ const Form = () => {
     }
 
     function handleDeleteTag(e,index){
-        console.log("delete count", count);
-        console.log("INDEX",index);
-        // const newData = formData.filter(item=> item.id != index)
-        // console.log(";;;;;;",newData);
-        // const newDataWithNewId = newData.map((item,index)=> ({...item, id: index}))             
-        // setFormData(newDataWithNewId)
-
+  
         const newData = formData.filter((_, idx) => idx !== index);
 
         const newDataWithNewId = newData.map((item, idx) => ({
@@ -191,7 +156,7 @@ const Form = () => {
     function handleViewMode(){
 
     }
-    console.log("save data",formData);
+    // console.log("save data",formData);
                       
 
   useEffect(() => {
@@ -200,7 +165,7 @@ const Form = () => {
 
   useEffect(()=>{
     const newDataWithNewId = formData.map((item,index)=> ({...item, id: index}))  
-    console.log("xxxxxxxxx",newDataWithNewId);            
+    // console.log("xxxxxxxxx",newDataWithNewId);            
     // setFormData(newDataWithNewId)
   },[formData,hanldeADD])
 
@@ -209,10 +174,6 @@ const Form = () => {
     getFormData()
     getUserMode()
   },[])
-
-  useEffect(() => {
-    console.log("Updated count:", count);
-  }, [count]);
 
 
   return (

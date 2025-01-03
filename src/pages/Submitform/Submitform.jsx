@@ -33,7 +33,7 @@ const Submitform = () => {
     if(currentStepIndex == 0 && toggle){
       if(currentStepIndex == 0){
 
-        console.log("starts");
+        // console.log("starts");
 
          const addstart = fetch(`${BASE_URL}/api/user/addStarts`,{
           method:"POST",
@@ -46,12 +46,12 @@ const Submitform = () => {
          
       }
       setToggle(false)
-      console.log("startsssss");
+      // console.log("startsssss");
     }
     setCurrentInput(e.target.value)
   }
 
-  console.log("ratinggggg",rating);
+  // console.log("ratinggggg",rating);
 
   const handleRatingChange = (value) => {
 

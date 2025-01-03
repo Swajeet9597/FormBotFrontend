@@ -21,7 +21,7 @@ const Navbar = ({ setIsDarkMode, isDarkMode }) => {
   
   const params = useParams()
 
-  console.log(params);
+  // console.log(params);
   
   const [loginUserInfo, setLoginUserInfo] = useState({
     name: ""

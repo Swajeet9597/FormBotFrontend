@@ -36,11 +36,11 @@ const Form_Navbar = ({ formData }) => {
   }
 
   const handleSave = async () => {
-    console.log(formData);
+    // console.log(formData);
     if (decodedValue !== "response") {
 
       if (updatedName !== "") {
-        console.log("updated");
+        // console.log("updated");
 
         if (params.anotherworkspace) {
           navigate(`/${params.anotherworkspace}/form/${params.params}/${updatedName}`)
@@ -119,7 +119,7 @@ const Form_Navbar = ({ formData }) => {
     function handleShareForm(e) {
       e.preventDefault()
       const link = `${window.location.origin}/${userId}/${params.params}/${params.formName}`
-      console.log(link, userId);
+      // console.log(link, userId);
       navigator.clipboard.writeText(link)
         .then(() => {
           toast.success('Link copied to clipboard!');

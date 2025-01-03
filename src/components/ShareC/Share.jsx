@@ -25,7 +25,7 @@ const Share = ({isDarkMode,setShareOpen}) => {
 
     const handleShareByEmail = async(e)=>{
       e.preventDefault()
-      console.log("lllllllll");
+      // console.log("lllllllll");
       if(email === ""){
         return toast.error("Please enter email")
       }
@@ -53,7 +53,7 @@ const Share = ({isDarkMode,setShareOpen}) => {
     function handleShareByCopyLink(e){
       e.preventDefault()
       const encodedMode = btoa(mode);
-      console.log(userId,encodedMode);
+      // console.log(userId,encodedMode);
       const link = `${window.location.origin}/share/${userId}?mode=${encodedMode}`;
 
       navigator.clipboard.writeText(link)

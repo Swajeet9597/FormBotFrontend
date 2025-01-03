@@ -18,10 +18,6 @@ const Response = () => {
   const [bubble,setBubble] = useState([])
   const [starts,setStarts] = useState(0)
 
-  console.log("views",views);
-  console.log("completed",completed);
-  console.log("starts",starts);
-
   const getBubble = async(req,res) =>{
     try {
       
@@ -42,9 +38,9 @@ const Response = () => {
 
       if (data.success) {
         // setFormData(data.data)
-        console.log("kkkkkkk",data.data);
+        // console.log("kkkkkkk",data.data);
         const newArr = data.data.filter((item)=> item.type == "buble")
-        console.log("newarr",newArr);
+        // console.log("newarr",newArr);
         setBubble(newArr)
       }
 
@@ -81,7 +77,7 @@ const Response = () => {
 
   const {lightMode} = useContext(DataContext)
 
-  console.log(userResponse)
+  // console.log(userResponse)
 
   useEffect(()=>{
     getBubble()

@@ -9,7 +9,7 @@ const SharePage = () => {
 
     const {lightMode} = useContext(DataContext)
 
-    console.log(lightMode);
+    // console.log(lightMode);
 
     const [userId, setUserId] = useState("")
 
@@ -38,7 +38,7 @@ const SharePage = () => {
   }
 
 
-    console.log(userId);
+    // console.log(userId);
 
     async function handleAddworkspace () {
 
@@ -48,7 +48,7 @@ const SharePage = () => {
 
       }
 
-      console.log("modeeee",mode);
+      // console.log("modeeee",mode);
 
       
       if(userId){
