@@ -59,6 +59,8 @@ const Login = () => {
     <div className='Loginpage'>
 
         {load ? <Loading/> : <></>}
+
+        <Loading/>
  
         <form onSubmit={handleSubmit} className="mainlogin">
 
