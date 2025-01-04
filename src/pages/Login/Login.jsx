@@ -62,7 +62,7 @@ const Login = () => {
 
         <Loading/>  </div> : <></>}
 
-        <Loading/>
+        {/* <Loading/> */}
  
         <form onSubmit={handleSubmit} className="mainlogin">
 
