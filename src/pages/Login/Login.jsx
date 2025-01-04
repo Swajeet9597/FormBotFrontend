@@ -48,7 +48,7 @@ const Login = () => {
             setLoad(false)
         }else{
             toast.error(data.msg)
-
+            setLoad(false)
         }
 
     }
@@ -58,7 +58,9 @@ const Login = () => {
     <>
     <div className='Loginpage'>
 
-        {load ? <Loading/> : <></>}
+        {load ? <div className="buffer">
+
+        <Loading/>  </div> : <></>}
 
         <Loading/>
  
