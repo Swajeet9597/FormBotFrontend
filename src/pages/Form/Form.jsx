@@ -250,7 +250,7 @@ const Form = () => {
                             {tag.name === "Email" ? <span>Hint : User will input a email on his form</span> : null}
                             {tag.name === "Date" ? <span>Hint : User will select a date</span> : null}
                             {tag.name === "Phone" ? <span>Hint : User will input a phone on his form</span> : null}
-                            {tag.name === "Buttons" ?<input id={`${index}`} value={tag.value || ""} onChange={handleChange} style={{backgroundColor: "#1F1F23",color: lightMode ? "" : "white",fontSize: "16px",  border:"none",width:"100%", padding:"12px 0" }} type="text" placeholder="Enter Button Name" />: null}
+                            {tag.name === "Buttons" ?<input id={`${index}`} value={tag.value || ""} onChange={handleChange} style={{backgroundColor: lightMode ? "white" : "#1F1F23",color: lightMode ? "" : "white",fontSize: "16px",  border:"none",width:"100%", padding:"12px 0" }} type="text" placeholder="Enter Button Name" />: null}
                         </span>
                         
                     </div>
