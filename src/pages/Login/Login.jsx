@@ -3,6 +3,7 @@ import './Login.css'
 import { Link, useNavigate } from 'react-router-dom';
 import { BASE_URL } from '../../helper/helper';
 import { ToastContainer, toast } from 'react-toastify';
+import Loading from '../../components/Loading/Loading';
 
 const Login = () => {
     const navigate = useNavigate()
@@ -10,6 +11,8 @@ const Login = () => {
         email: "",
         password: ""
     })
+
+    const [load,setLoad] = useState(false)
 
     async function handleOnChange(e){
         let name = e.target.name;
@@ -24,7 +27,7 @@ const Login = () => {
     }
     async function handleSubmit(e){
         e.preventDefault();
-
+        setLoad(true)
         let response = await fetch(`${BASE_URL}/api/user/checkUser`,{
             method: "POST",
             credentials: "include",
@@ -42,7 +45,7 @@ const Login = () => {
            
             toast.success(data.msg)
             navigate("/dashboard/root")
-            
+            setLoad(false)
         }else{
             toast.error(data.msg)
 
@@ -54,6 +57,8 @@ const Login = () => {
   return (
     <>
     <div className='Loginpage'>
+
+        {load ? <Loading/> : <></>}
  
         <form onSubmit={handleSubmit} className="mainlogin">
 
