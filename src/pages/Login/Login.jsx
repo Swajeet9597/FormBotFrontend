@@ -12,7 +12,7 @@ const Login = () => {
         password: ""
     })
 
-    const [load,setLoad] = useState(true)
+    const [load,setLoad] = useState(false)
 
     async function handleOnChange(e){
         let name = e.target.name;
