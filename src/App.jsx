@@ -9,8 +9,27 @@ import LandingPage_Footer from './components/LandingPage_Footer/LandingPage_Foot
 function App() {
   const [count, setCount] = useState(0)
 
+  
+  const getScreen = () =>{ 
+    return{
+      width:window.innerWidth,
+    };
+  };
+
+  const [screeSize, setScreenSize] = useState(getScreen());
+
+  useEffect(()=>{
+    const Screen = () =>{
+        setScreenSize(getScreen());
+    };
+    window.addEventListener('resize', Screen);
+
+  },[]);
+
   return (
     <div className="land">
+
+{screeSize.width > 768 ? <> This website will work on PC/laptop Only for better experience </> :
 
     <div className='landingpage'>
       <LandingPage_Navbar/>
@@ -18,7 +37,8 @@ function App() {
          <img src="LandingPage.png" alt="" />
       </main>
       <LandingPage_Footer/>
-    </div>
+    </div> 
+}
     
     </div>
   )
