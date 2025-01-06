@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="land">
 
-{screeSize.width > 768 ? <> This website will work on PC/laptop Only for better experience </> :
+{screeSize.width < 768 ? <> This website will work on PC/laptop Only for better experience </> :
 
     <div className='landingpage'>
       <LandingPage_Navbar/>
