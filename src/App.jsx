@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="land">
 
-{screeSize.width < 768 ? <div style={{color:"white", height:"100%", display:"flex", justifyContent:"center", alignItems:"center"}}> This website is designed to work best on PCs and laptops for an enhanced experience. </div> :
+{screeSize.width < 768 ? <div style={{color:"white", height:"100vh", display:"flex", justifyContent:"center", alignItems:"center"}}> This website is designed to work best on PCs and laptops for an enhanced experience. </div> :
 
     <div className='landingpage'>
       <LandingPage_Navbar/>
