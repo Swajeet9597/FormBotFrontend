@@ -7,8 +7,6 @@ import LandingPage_Footer from './components/LandingPage_Footer/LandingPage_Foot
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   
   const getScreen = () =>{ 
     return{
@@ -25,7 +23,7 @@ function App() {
     window.addEventListener('resize', Screen);
 
   },[]);
-
+// check frontend
   return (
     <div className="land">
 
